@@ -14,7 +14,7 @@ export const getPostList = () => {
             });
     }
 }
-export const addJobPost = (user) => {
+export const addJobPost = (jobPost) => {
     return async (dispatch) =>{
         let config = {
             headers: {
@@ -23,7 +23,7 @@ export const addJobPost = (user) => {
             
         }
         const response=
-         await axios.post("/JobPosting/AddJobPostingByUser",user,config)
+         await axios.post("/JobPosting/AddJobPostingByUser",jobPost,config)
         dispatch({
                 type:'ADD_JOBPOST',
                 payload:response.data
