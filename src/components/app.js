@@ -24,36 +24,25 @@ class  App extends Component{
     }
     render(){
     return(
-        
-        
         <Router history={history}>
-            <div>
-            
-                <Container className="pt-4">
-                    
-                        <NavbarComponent/>
-                    
-                        <Switch>
-                            <Route path='/Home' exact component={HomeComponent}></Route>
-                            
-                            <Route path='/Register' exact component={UserRegister}></Route>
-                            <Route path='/User/Languages' exact component={LanguageComponent}></Route>
-                            <Route path='/User/Perfections' exact component={PerfectionComponent}></Route>
-                            <Route path='/User/WorkExperiences' exact component={WorkExperienceComponent}></Route>
-                            <Route path='/User/Educations' exact component={EducationComponent}></Route>
-                            <Route path='/User/Detail' exact component={UserDetailComponent}></Route>
-                            <Route path='/Login' exact component={LoginComponent}></Route>
-                            <Route path='/IK/JobPosting' exact component={JobPostingComponent}></Route>
-                            <Route path='/User/Myaplications' exact component={MyApplicationsComponent}></Route>
-                            <Route path='/IK/Aplication/Detail' exact component={ApplicationDetailComponent}></Route>
-                            <Route path='/User/Alljobapplications' exact component={JobApplicationsComponent}></Route>
-                        </Switch>
-                    
-                </Container>
-            
-            </div>
+            <Container className="pt-4">
+                <NavbarComponent/>
+                <Switch>
+                    <Route path='/Home' exact component={HomeComponent}></Route>
+                    <Route path='/Register' exact component={UserRegister}></Route>
+                    <Route path='/User/Languages' exact component={LanguageComponent}></Route>
+                    <Route path='/User/Perfections' exact component={PerfectionComponent}></Route>
+                    <Route path='/User/WorkExperiences' exact component={WorkExperienceComponent}></Route>
+                    <Route path='/User/Educations' exact component={EducationComponent}></Route>
+                    <Route path='/User/Detail' exact component={UserDetailComponent}></Route>
+                    <Route path='/Login' exact component={LoginComponent}></Route>
+                    <Route path='/IK/JobPosting' exact component={JobPostingComponent}></Route>
+                    <Route path='/User/Myaplications' exact component={MyApplicationsComponent}></Route>
+                    <Route path='/IK/Aplication/Detail' exact component={ApplicationDetailComponent}></Route>
+                    <Route path='/User/Alljobapplications' exact component={JobApplicationsComponent}></Route>
+                </Switch>
+            </Container>
         </Router>
-      
      )
     }
 }
