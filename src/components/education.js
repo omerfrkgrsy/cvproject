@@ -52,8 +52,7 @@ class EducationComponent extends Component {
                         <Form onSubmit={this.addEducation.bind(this)} inline className="ui form center ml-5 p-3" fluid="md" >
                         <div className="field">
                         <div className="two field">
-                        <FormGroup className="field mb-2 mr-sm-2 mb-sm-0 field">
-                            
+                        <FormGroup className="field mb-2 mr-sm-2 mb-sm-0 field"> 
                             <Label for="exampleEmail" className="mr-sm-2">Okul İsmi</Label>
                             <Input type="text" name="schoolName" id="schoolName" 
                             placeholder="Okul" 

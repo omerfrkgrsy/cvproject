@@ -16,7 +16,6 @@ class PerfectionComponent extends Component {
         }
         
     }
-    
     addPerfection =(e) => {
         e.preventDefault();
         const {perfectionName,ExperienceLevelId}=this.state;
@@ -32,12 +31,8 @@ class PerfectionComponent extends Component {
     }
     addjobApplication=(e) => {
         e.preventDefault();
-        console.log(this.props.location.state.state.id);
         this.props.addjobApplication(this.props.location.state.state.id)
     }
-
-
-    
     componentDidMount(){
         this.props.getPerfections();
         this.props.getExperience();
